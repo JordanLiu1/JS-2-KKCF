@@ -115,3 +115,25 @@ b > 5 || c < 8; // returns true because b > 5 is true
 // Use conditionals and comparisons to find which of the 3 is largest 
 // Console.log the result
 // Result: “x is the largest number”
+
+let num1 = prompt("Input 1st number")
+let num2 = prompt("Input 2st number")
+let num3 = prompt("Input 3st number")
+
+if (num1 < num2) {
+    if (num3 < num2) {
+        greatestnum = num2
+    }
+    else {
+        greatestnum = num3
+    }
+}
+else{
+    if (num3 < num1) {
+        greatestnum = num1
+    }
+    else{
+        greatestnum = num3
+    }
+}
+console.log(greatestnum)
