@@ -36,3 +36,26 @@ document.querySelector("#transform").innerText = 'Sailor Moon'
 // 12. Select the body element and use style.cssText to change the text color and background color
 
 //13. Change src attribute of the image 
+function sayHello() {
+    alert("hi")
+}
+sayHello();
+function add2nums(a, b){
+    alert(a+b)
+}
+
+add2nums(2, 3)
+
+let randomR = Math.floor(Math.random() * 255 )
+    let randomB = Math.floor(Math.random() * 255 )
+    let randomG = Math.floor(Math.random() * 255 )
+
+let colorbutton = document.querySelector('#random-color')
+
+function changebackground() {
+    alert('clicked')
+    document.body.style.backgroundColor = `rgb(${randomR},${randomR},${randomR})`
+}
+colorbutton.addEventListener('click', changebackground)
+
+
